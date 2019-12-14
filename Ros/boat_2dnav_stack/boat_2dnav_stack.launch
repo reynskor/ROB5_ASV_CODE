@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="sensor_stream" type="sensor_stream" name="sensor_stream" output="screen">
+     <param name="sensor_param" value="param_value" />
+  </node>
+  <node pkg="odometry_boat" type="odometry_boat" name="odom" output="screen">
+    <param name="odom_param" value="param_value" />
+  </node>
+  <node pkg="robot_setup_tf" type="tf_broadcaster" name="robot_tf_publisher" output="screen">
+    <param name="tf_param" value="param_value" />
+  </node>
+	
+  </launch>
